@@ -14,7 +14,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://g-traf.vercel.app",
+      "https://jess-voyage.vercel.app",
       "https://admingtraf.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
