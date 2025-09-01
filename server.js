@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import reservationsRouter from "./donnes/reservation.js"; // <-- supposé être un Router Express
+import creneaux from "./donnes/creneaux.js"; // <-- supposé être un Router Express
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.get("/", (req, res) => {
 
 // 📌 Routes API
 app.use("/api/reservations", reservationsRouter);
+app.use("/api/creneau", reservationsRouter);
 
 // 🏥 Health check
 app.get("/api/health", (req, res) => {
