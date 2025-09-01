@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 
 // 📌 Routes API
 app.use("/api/reservations", reservationsRouter);
-app.use("/api/creneau", reservationsRouter);
+app.use("/api/creneau", creneaux);
 
 // 🏥 Health check
 app.get("/api/health", (req, res) => {
